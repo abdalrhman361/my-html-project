@@ -1,110 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drama Pro | User Home</title>
-    <style>
-        
-body{
-    background-color: #0f0f0f;
-    margin: 0;
-    font-family: sans-serif;
-}
-.bar{
-    display: flex;
-    
-}
-.panner_container{
-    padding-left: 1.5% ;
-    color: white;
-     text-shadow: 1px 2px 10px lightgray;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drama Pro | User Home</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      margin: 0;
+      font-family: sans-serif;
+      color: white;
+    }
 
-    font-weight: bold;
-    font-size: 15px;
-}
-.options{
-        display: inline-flex;
-        margin-left: 800px;
-}
-.contact_us_container{
-    display: flex;
-}
-.contact_us_svg{
-    margin-top: 22px;
-    margin-left: 7px;
-}
-.login_text, .sign_up_text , .contact_us_text ,.Home_option {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    margin-top: 25px;
-    display: block;
-    margin-left: 70px;
-    font-weight: 600;
-}
+    .bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #111;
+    }
 
-.contact_us_text{
-    display: flex;
-}
-.home_option , .Seriers_option{
-  text-align: center; 
-  background-color: #11a1f5e3;
-  font-size: 20px; 
-  border: solid 2px white;
-  border-radius: 30px;
-  display: block;
-  width: 90px;
-  height: 25px;
-  padding-top: 3px;
-  text-decoration : none;
-  color:  white ;
-  margin-left: 430px;
-  margin-top: 20px;
-  text-shadow: 1px 2px 10px lightgray;
-  box-shadow: 1px 2px 10px white;
-}
-.home_option:hover{
-    background-color: #0f0f0f;
-}
-.Seriers_option{
-  background-color: #0f0f0f;
-  box-shadow: 0px;
-}
-.Seriers_option:hover{
-  background-color: #11a1f5e3;
-}
-.more_action_option{
-  display: block;
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  margin-left: 290px;
-  margin-top: 30px;
-}
-    </style>
+    .panner_container h1 {
+      font-size: 22px;
+      margin: 0;
+      text-shadow: 1px 2px 10px lightgray;
+    }
+
+    .nav_buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .home_option, .Seriers_option {
+      text-align: center;
+      background-color: #11a1f5e3;
+      font-size: 16px;
+      border: solid 2px white;
+      border-radius: 30px;
+      padding: 5px 15px;
+      text-decoration: none;
+      color: white;
+      text-shadow: 1px 2px 10px lightgray;
+      box-shadow: 1px 2px 10px white;
+      transition: 0.3s;
+    }
+
+    .home_option:hover {
+      background-color: #0f0f0f;
+    }
+
+    .Seriers_option {
+      background-color: #0f0f0f;
+      box-shadow: none;
+    }
+
+    .Seriers_option:hover {
+      background-color: #11a1f5e3;
+    }
+
+    .more_action_option {
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+    }
+
+    /* MEDIA QUERY FOR SMALL DEVICES */
+    @media (max-width: 768px) {
+      .panner_container h1 {
+        font-size: 18px;
+      }
+
+      .nav_buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .home_option, .Seriers_option {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .more_action_option {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+
+  </style>
 </head>
 <body>
-   
-        <div class="bar">
-            <div class="panner_container">
-                  <h1 class="panner_text" title="Panner">Drama Pro</h1>
-            </div>
-            <div class="home_option_container">
-                <a href="" class="home_option">Home</a>
-            </div>
-            <div class="seriers_option_container">
-                <a href="" class="Seriers_option">Seriers</a>
-            </div>
-            <div class="more_action_container">
-               <a href="" class="more_action_option">More action...</a>
-            </div>
-        </div>
-    <div class="section_body_data_list_videos_and_promos">
-         
+  <div class="bar">
+    <div class="panner_container">
+      <h1 title="Panner">Drama Pro</h1>
     </div>
+    <div class="nav_buttons">
+      <a href="#" class="home_option">Home</a>
+      <a href="#" class="Seriers_option">Series</a>
+      <a href="#" class="more_action_option">More action...</a>
+    </div>
+  </div>
 
-        </div>
-   </div>
+  <div class="section_body_data_list_videos_and_promos">
+    <!-- محتوى الفيديو أو البوستات هنا -->
+  </div>
 </body>
 </html>
